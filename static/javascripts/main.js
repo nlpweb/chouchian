@@ -104,7 +104,7 @@ function fetchALL(url)
         console.log("run bind_events");
 
         // close spinner
-        LOADING.fadeOut(200, function(){ TEXT.fadeIn(50); });
+        LOADING.fadeOut(200, function(){ TEXT.fadeIn(150); });
             // TEXT.fadeIn(100);
         // });
         bind_events(my_students[current_class]);
