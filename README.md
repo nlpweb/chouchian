@@ -1,5 +1,5 @@
-chouchian
-=========
+Chouchian (抽籤)
+================
 
 A Lottery based on `Javascript` / `Google Spreadsheet`
 
@@ -14,10 +14,12 @@ python server -d -p 5000
 Features
 ========
 
-* Modify the google spreadsheet to change the data instantly
-* Use hashtag to change data class
+* Modify the google spreadsheet to change the `data content` (e.g., student name)
+* Use hashtag to change `data class` (e.g., class name)
 
 To-do
 =====
 
-See (issue)[https://github.com/nlpweb/chouchian/issues]
+- responsive desgin
+- allow url/class input
+- See more in [issue](https://github.com/nlpweb/chouchian/issues)
