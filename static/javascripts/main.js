@@ -59,7 +59,13 @@ var bind_events = function(candidates)
 
 function fetchALL(url) 
 {
-    TEXT.fadeOut(200, function(){ LOADING.fadeIn(50); });
+    if(TEXT.hasClass("hide"))
+    {
+        LOADING.fadeIn(50);
+    }else{
+        TEXT.fadeOut(200, function(){ LOADING.fadeIn(50); });    
+    }
+    
     $.getJSON(url, function(data) {
         // open spinner
 
