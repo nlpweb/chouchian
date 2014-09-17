@@ -62,7 +62,7 @@ html, body
   }
     .result-wrap
     {
-      width: 256px;
+      width: 386px;
       height: 72px;
       margin: 0 auto  ;
       font-size: 2.5em;
@@ -70,7 +70,7 @@ html, body
       font-family: verdana;
       color: #444;
     }
-    a.button
+    .button
     {
       width: 256px;
 
@@ -92,19 +92,21 @@ html, body
       box-shadow: 1px 1px 40px 1px #ccc;
 
       border: 1px solid transparent;
+
+      cursor: pointer;
     }
 
-    a.button-error
+    .button-error
     {
       background: rgb(202, 60, 60);
     }
-    a.button-error:hover
+    .button-error:hover
     {
       background: #dc3910;
       border: 1px solid #e44a24;
       box-shadow: 1px 1px 40px 1px #bdbdbd;
     }
-    a.button-error:active
+    .button-error:active
     {
       background: rgb(202, 60, 60)!important;
       box-shadow: 1px 1px 40px 1px #ddd;
