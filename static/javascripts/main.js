@@ -4,6 +4,9 @@
 var gdocurl = 'https://docs.google.com/spreadsheets/d/1-teCetf_KoSe2TkI9L8eyp9O7slcr6R3Bd558kPUOcQ/pubhtml'
 var url = 'https://spreadsheets.google.com/feeds/list/1-teCetf_KoSe2TkI9L8eyp9O7slcr6R3Bd558kPUOcQ/od6/public/values?alt=json-in-script&callback=?';
 
+var TEXT = $('.button-text');
+var LOADING = $('.fa-spinner');
+
 var current_class = 'classa';
 // my_students = {
 //     classa: [...],
@@ -31,9 +34,7 @@ $(window).on('hashchange', function(e){
 });
 
 var bind_events = function(candidates)
-{
-
-    
+{   
     console.log("====== in bind_events ======");
     console.log("current_class:",current_class);
     console.log("my_students:",my_students);
@@ -58,7 +59,14 @@ var bind_events = function(candidates)
 
 function fetchALL(url) 
 {
-    $.getJSON(url, function(data){
+    TEXT.fadeOut(200, function(){ LOADING.fadeIn(50); });
+    $.getJSON(url, function(data) {
+        // open spinner
+
+        // TEXT.hide(0, function(){
+            // LOADING.fadeIn(300);
+        // });
+
         var classes_num = -1;
         // console.log(data);
         $.each(data.feed.entry, function(i,obj){
@@ -94,6 +102,11 @@ function fetchALL(url)
         console.log("my_students:",my_students);
         console.log("candidates:",my_students[current_class]);
         console.log("run bind_events");
+
+        // close spinner
+        LOADING.fadeOut(200, function(){ TEXT.fadeIn(50); });
+            // TEXT.fadeIn(100);
+        // });
         bind_events(my_students[current_class]);
         // console.log(my_students);
     });
