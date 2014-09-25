@@ -3,8 +3,9 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" type="text/css" href="static/stylesheets/main.css" media="screen">
     <link rel="stylesheet" type="text/css" href="static/stylesheets/font-awesome.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="static/stylesheets/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="static/stylesheets/main.css" media="screen">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -14,7 +15,9 @@
   <body>
     <div class="container">
       <header>抽籤</header>
-      <section class="content-wrap">
+
+      <!-- ========================================================================================== -->
+      <section class="content-wrap hide">
         <div class="row">
           <div href="" class="button button-error" id="yo-btn">
             <span class="button-text hide">Yo!</span>
@@ -26,14 +29,33 @@
             <h3 class="result"></h3>
           </div>
         </div>
-        
       </section>
+      <!-- ========================================================================================== -->
+      <section class="info">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="input-wrap">
+              <input id="spread-url"></input>
+            </div>
+            <div class="input-wrap">
+              <input id="sheet-name"></input>
+            </div>            
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-danger">Danger</button>
+          </div>
+
+        </div>
+      </section>
+      <!-- ========================================================================================== -->
+
       <footer>
         maintained by <a href="https://github.com/nlpweb">nlpweb</a><br>
       </footer>       
     </div>
-
-    <script type="text/javascript" src="static/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="static/javascripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="static/javascripts/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="static/javascripts/bootstrap.js"></script>
     <script type="text/javascript" src="static/javascripts/main.js"></script>
   </body>
 </html>

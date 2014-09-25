@@ -52,6 +52,11 @@ html, body
     color: #444;    
   }
 
+  input
+  {
+    outline: 0;
+    
+  }
   .row
   {
     width: 100%;
@@ -59,7 +64,19 @@ html, body
     text-align: center;
     margin-top: 48px;
     margin-bottom: 32px;
+    margin-left: 0;
+    margin-right: 0;
   }
+    .input-wrap
+    {
+      width: 100%;
+      background: red;
+    }
+      .input-wrap input
+      {
+        width: 90%;
+      }
+
     .result-wrap
     {
       width: 386px;
