@@ -52,10 +52,10 @@ html, body
     color: #444;    
   }
 
-  input
+  input, button
   {
-    outline: 0;
-    
+    outline: none!important;
+
   }
   .row
   {
@@ -70,11 +70,13 @@ html, body
     .input-wrap
     {
       width: 100%;
+      margin-bottom: 4px;
       background: red;
     }
       .input-wrap input
       {
         width: 90%;
+        border: 1px solid #aaa;
       }
 
     .result-wrap
