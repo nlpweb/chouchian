@@ -28,7 +28,7 @@ Usage
 4. after click `change`, the url will looks like 
 
 	```
-	http://nlpweb.github.io/chouchian/#spread=1ShT62S65ypu_9D9OFBd6_ImWBpngi-y_iK0wYmw4YLU&sheet=sinica
+	http://nlpweb.github.io/chouchian/#spread=1-teCetf_KoSe2TkI9L8eyp9O7slcr6R3Bd558kPUOcQ&sheet=classa
 	```
 
 
