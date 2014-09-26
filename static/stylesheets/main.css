@@ -51,6 +51,11 @@ html, body
     font-family: verdana;
     color: #444;    
   }
+  section#info
+  {
+    padding-top: 24px;
+    min-height: 128px;
+  }
 
   input, button
   {
@@ -71,24 +76,77 @@ html, body
     {
       width: 100%;
       margin-bottom: 4px;
-      background: red;
+      /*background: red;*/
+
     }
-      .input-wrap input
+    .text-form
+    {
+      text-align: left;
+      font-family: verdana;
+      padding-bottom: 4px;
+    }
+      .input-wrap .input-label, .input-wrap .input-area
+      {
+        display: inline-block;
+
+      }
+      .input-wrap .input-label
+      {
+        width: 25%;
+        /*min-width: 96px;*/
+        /*background: blue;*/
+        text-align: right;
+        padding-right: 4px;
+        /*color:white;*/
+      }
+      .input-wrap .input-area
+      {
+        width: 70%;
+      }
+        .input-wrap .input-area input
+        {
+          width: 95%;
+          height: 32px;
+          border: 1px solid #aaa;
+          padding-left: 8px;
+          padding-right: 8px;
+          color: #888;
+        }
+        .input-wrap .input-area input:focus
+        {
+          color: #444;
+          border: 1px solid #10961d;
+        }
+        .warning {
+         border: 1px solid #dc3911!important; 
+        }
+
+
+      .input-wrap button
       {
         width: 90%;
-        border: 1px solid #aaa;
-      }
+        height: 48px;
+      } 
+      .input-wrap button:active
+      {
+        background: #dc3911;
+      } 
 
     .result-wrap
     {
       width: 386px;
-      height: 72px;
+      height: 128px;
       margin: 0 auto  ;
       font-size: 2.5em;
       text-align: center;
       font-family: verdana;
       color: #444;
     }
+      .result-wrap .result
+      {
+        /*width: 100%;
+        height: 320px;*/
+      }
     .button
     {
       width: 256px;
@@ -131,7 +189,7 @@ html, body
       box-shadow: 1px 1px 40px 1px #ddd;
     }
 
-.hide
+.back
 {
   display: none;
 }

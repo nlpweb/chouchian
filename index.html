@@ -17,33 +17,36 @@
       <header>抽籤</header>
 
       <!-- ========================================================================================== -->
-      <section class="content-wrap hide">
+      <section id="content" class="content-wrap back" >
         <div class="row">
           <div href="" class="button button-error" id="yo-btn">
-            <span class="button-text hide">Yo!</span>
+            <span class="button-text back">Yo!</span>
             <span class="fa fa-spin fa-spinner"></span>
           </div>
         </div>
         <div class="row">
           <div class="result-wrap">
-            <h3 class="result"></h3>
+
+            <span class="result"></span>
           </div>
         </div>
       </section>
       <!-- ========================================================================================== -->
-      <section class="info">
+      <section id="info" class="back">
         <div class="row">
           <div class="col-md-9">
-            <div class="input-wrap">
-              <input id="spread-url" />
+            <div class="input-wrap text-form">
+              <div class="input-label">SheetURL</div>
+              <div class="input-area"><input id="spread-url" /></div>
             </div>
-            <div class="input-wrap">
-              <input id="sheet-name" />
+            <div class="input-wrap text-form">
+              <div class="input-label">SheetName</div>
+              <div class="input-area"><input id="sheet-name" /></div>
             </div>            
           </div>
           <div class="col-md-3">
             <div class="input-wrap">
-              <button type="button" class="btn btn-danger">change</button>
+              <button type="button" id="change-btn" class="btn btn-danger">change</button>
             </div>
             
           </div>
