@@ -39,10 +39,3 @@ Local Dev
 
 - access: `http://localhost:5000/`
  
-
-To-do
-=====
-
-- responsive desgin
-- allow url/class input
-- See more in [issue](https://github.com/nlpweb/chouchian/issues)
